@@ -59,8 +59,12 @@ class BetterLibrary {
                 '}';
     }
 
-    public void addToLib(Book newBook) {
+    public void addBookToLib(Book newBook) {
         getBooks().add(newBook);
+    }
+
+    public void deleteBookFromLib(Book newBook) {
+        getBooks().remove(newBook);
     }
 
 
@@ -77,9 +81,12 @@ class BetterLibrary {
 
 
         BetterLibrary myLib = new BetterLibrary(new ArrayList<Book>());
-        myLib.addToLib(lotr);
-        myLib.addToLib(hp);
+        myLib.addBookToLib(lotr);
+        myLib.addBookToLib(hp);
         System.out.println(myLib);
+        myLib.deleteBookFromLib(lotr);
+        System.out.println(myLib);
+
     }
 
 }
