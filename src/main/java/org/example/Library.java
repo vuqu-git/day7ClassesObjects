@@ -37,6 +37,7 @@ public class Library {
 
 }
 
+//bonus assignment
 class BetterLibrary {
     private ArrayList<Book> books;
 
@@ -74,6 +75,12 @@ class BetterLibrary {
                 "3487843297743"
         );
 
+
+        Book ff = new Book("Iron Flame - Flammengeküsst",
+                "Yarros",
+                "98458430"
+        );
+
         Book hp = new Book("Harry Potter and the Philosopher's Stone.",
                 "Rowling",
                 "8987493759843"
@@ -82,9 +89,10 @@ class BetterLibrary {
 
         BetterLibrary myLib = new BetterLibrary(new ArrayList<Book>());
         myLib.addBookToLib(lotr);
+        myLib.addBookToLib(ff);
         myLib.addBookToLib(hp);
         System.out.println(myLib);
-        myLib.deleteBookFromLib(lotr);
+        myLib.deleteBookFromLib(ff);
         System.out.println(myLib);
 
     }
