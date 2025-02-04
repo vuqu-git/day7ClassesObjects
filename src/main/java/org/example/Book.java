@@ -38,9 +38,9 @@ public class Book {
     @Override
     public String toString() {
         return "\n\tBook{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
+                "'" + title + '\'' +
+                " written by '" + author + '\'' +
+                ", ISBN=" + isbn +
                 '}' + "\n";
     }
 }
